@@ -1,0 +1,65 @@
+@media (max-width: 899px) {
+  .nav-shell {
+    min-height: 68px;
+  }
+
+  .brand {
+    font-size: 1.28rem;
+  }
+
+  .nav-actions .btn:not(.cart-trigger) {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+  }
+
+  .dessert-showcase {
+    width: 88%;
+    inset: 4% 6% auto auto;
+  }
+
+  .floating-note {
+    font-size: 0.88rem;
+  }
+
+  .floating-note.one {
+    left: 0.4rem;
+    top: 0;
+  }
+
+  .floating-note.two {
+    right: 0.2rem;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .container,
+  .nav-shell {
+    width: min(100% - 1.1rem, var(--container));
+  }
+
+  .hero-actions,
+  .product-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .toast-region {
+    inset: auto 0.6rem 0.6rem 0.6rem;
+  }
+
+  .toast {
+    max-width: 100%;
+  }
+}

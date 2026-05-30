@@ -1,0 +1,67 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 700ms ease, transform 700ms cubic-bezier(.16,1,.3,1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+.pulse-soft {
+  animation: pulse-soft 2.8s ease-in-out infinite;
+}
+
+.cart-bump {
+  animation: cart-bump 420ms ease;
+}
+
+.add-flash {
+  animation: add-flash 620ms ease;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(240, 138, 184, 0.28); }
+  50% { box-shadow: 0 0 0 12px rgba(240, 138, 184, 0); }
+}
+
+@keyframes cart-bump {
+  0%, 100% { transform: scale(1); }
+  42% { transform: scale(1.14); }
+}
+
+@keyframes add-flash {
+  0% { box-shadow: 0 0 0 0 rgba(240, 138, 184, 0.42); }
+  70% { box-shadow: 0 0 0 12px rgba(240, 138, 184, 0); }
+  100% { box-shadow: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

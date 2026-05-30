@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: [SUPUESTO A VALIDAR]/sitemap.xml

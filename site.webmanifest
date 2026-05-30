@@ -1,0 +1,22 @@
+{
+  "name": "thayspostres",
+  "short_name": "thayspostres",
+  "description": "Sitio estático de repostería artesanal con catálogo y carrito de cotización por WhatsApp.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff8ee",
+  "theme_color": "#f08ab8",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "assets/img/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

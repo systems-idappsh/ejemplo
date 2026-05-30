@@ -1,0 +1,79 @@
+.sprinkle-field {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.sprinkle {
+  position: absolute;
+  inline-size: 0.72rem;
+  block-size: 0.22rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  opacity: 0.42;
+  transform: rotate(var(--rotate, 20deg));
+}
+
+.sprinkle:nth-child(2n) { background: var(--color-accent); }
+.sprinkle:nth-child(3n) { background: #b8e0d2; }
+
+.blob {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(0);
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.blob-pink {
+  background: var(--color-primary-soft);
+}
+
+.blob-cream {
+  background: var(--color-accent-soft);
+}
+
+.blob.one {
+  inline-size: 18rem;
+  block-size: 18rem;
+  top: -5rem;
+  right: -6rem;
+}
+
+.blob.two {
+  inline-size: 11rem;
+  block-size: 11rem;
+  bottom: 4rem;
+  left: -4rem;
+}
+
+.wave-divider {
+  position: relative;
+}
+
+.wave-divider::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 52px;
+  background:
+    radial-gradient(54px 28px at 54px 0, transparent 96%, var(--color-surface-strong) 100%) repeat-x;
+  background-size: 108px 52px;
+}
+
+.sticker {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  z-index: 2;
+}
